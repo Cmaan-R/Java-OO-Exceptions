@@ -25,8 +25,7 @@ public class Fluxo {
 	private static void metodo2() {
 
 		System.out.println("Inicio do metodo2");
-		ArithmeticException ex = new ArithmeticException("Jogando Exception Deu errado");
-		throw ex;
+		throw new ArithmeticException("Jogando Exception Deu errado");
 		
 //		System.out.println("Fim do metodo2");
 
