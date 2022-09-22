@@ -26,7 +26,7 @@ public class Fluxo {
 
 		System.out.println("Inicio do metodo2");
 		throw new MinhaExcecao("Lançando Minha Própria Exceção");
-
+		
 //		System.out.println("Fim do metodo2");
 
 	}
