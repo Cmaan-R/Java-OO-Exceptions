@@ -7,14 +7,14 @@ public class FluxoComError {
 		try {
 			metodo1();
 
-		} catch (NullPointerException | ArithmeticException | MinhaExcecao ex) {
+		} catch (NullPointerException | ArithmeticException ex) {
 			String msg = ex.getMessage();
 			System.out.println("Exception " + msg);
 		}
 		System.out.println("Fim do main");
 	}
 
-	private static void metodo1 () throws MinhaExcecao {
+	private static void metodo1 (){
 
 		System.out.println("Inicio do metodo1");
 		metodo2();
