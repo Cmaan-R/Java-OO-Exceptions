@@ -1,17 +1,20 @@
 
-public class Conexao {
+public class Conexao implements AutoCloseable {
 
 	public Conexao() {
 		System.out.println("Abrindo Conexao");
+		throw new IllegalStateException();
 	}
 
 	public void leDados() {
 		System.out.println("Recebendo Dados");
 		 throw new IllegalStateException();
 	}
-
-	public void fecha() {
+	
+	@Override
+	public void close() {
 		System.out.println("Fechando Conexao");
+		
 	}
 
 }
